@@ -8,32 +8,24 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="navi-links">
-        <ul class="navi-items">    
-            <li>
-                <a href="./index.html" class="active">Home</a>
-            </li>
-            <li>
-                <a href="./pop-recipes.html">Popular Recipes</a>
-            </li>
-            <li>
-                <a href="./all-recipes.html">All Recipes</a>
-            </li>
-        </ul>
-    
+    <!--This portion of my code was heavily inspired by the W3Schools Lesson on how to create a collapsed sidebar. The link is pasted here for you to check out: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp-->
+    <div id="myNaviBar" class="navibar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html" class="active">Home</a>
+        <a href="./pop-recipes.html">Popular Recipes</a>
+        <a href="./recipes/banana-pudding.html">Banana Pudding</a>
+        <a href="./recipes/blackened-chicken.html">Blackened Chicken</a>
+        <a href="./recipes/beef-stroganoff.html">Simple Beef Stroganoff</a>
+        <a href="./all-recipes.html">All Recipes</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <h1 id="homeTitle">
+            Odin Recipes
+        </h1>
     </div>
    
-    <h1>
-        Odin Recipes
-    </h1>
-    <h3>
-        Popular Recipes
-    </h3>
-    <ul>
-        <li><a href="./recipes/banana-pudding.html">Banana Pudding</a></li>
-        <li><a href="./recipes/blackened-chicken.html">Blackened Chicken</a></li>
-        <li><a href="./recipes/beef-stroganoff.html">Simple Beef Stroganoff</a></li>
-    </ul>
     
 </body>
 </html>
