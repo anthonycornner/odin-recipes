@@ -11,6 +11,59 @@ html {
     text-align: center;
 }
 
+.navibar {
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.navibar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:brown;
+    display: block;
+    transition: 0.3s;
+}
+
+.navibar a:hover{
+    color: darkorange:
+}
+
+.navibar .closebtn{
+    position:absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: brown;
+    color:blanchedalmond;
+    padding: 10px 20px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: blanchedalmond;
+    color:brown;
+}
+
+@media screen and (max-height: 450px) {
+    .navibar {padding-top: 15px;}
+    .navibar a {font-size: 18px;}
+}
+
 a, a:visited{
     color: inherit;
 }
