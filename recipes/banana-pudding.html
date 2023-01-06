@@ -5,14 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Pudding</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
 </head>
 <body>
-
+   <!--This portion of my code was heavily inspired by the W3Schools Lesson on how to create a collapsed sidebar. The link is pasted here for you to check out: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp-->
+<div id="myNaviBar" class="navibar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="../index.html">Home</a>
+    <div class="dropdown">
+        <a href="../pop-recipes.html">Popular Recipes</a>
+        <div class="dropdown-content">
+            <a href="./recipes/banana-pudding.html">Banana Pudding</a>
+            <a href="./recipes/blackened-chicken.html">Blackened Chicken</a>
+            <a href="./recipes/beef-stroganoff.html">Simple Beef Stroganoff</a> 
+        </div>
+        
+    </div>
+    
+    <a href="../all-recipes.html">All Recipes</a>
+</div>
+
+<div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776;Navigate</button>
     <h1>
         Banana Pudding
     </h1>
-
     <img src="../images/banana-pud.jpg" alt="Banana pudding in a clear bowl on a marble counter">
 
     <h3>
@@ -50,6 +68,8 @@
             Layer wafers, banana slices, and pudding mixture in a glass serving bowl. Chill until serving.
         </li>
     </ol>
+</div>
+    
     <a href="../index.html">Find more recipes here!</a>
 </body>
 </html>

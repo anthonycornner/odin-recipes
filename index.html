@@ -13,18 +13,26 @@
     <div id="myNaviBar" class="navibar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./index.html" class="active">Home</a>
-        <a href="./pop-recipes.html">Popular Recipes</a>
-        <a href="./recipes/banana-pudding.html">Banana Pudding</a>
-        <a href="./recipes/blackened-chicken.html">Blackened Chicken</a>
-        <a href="./recipes/beef-stroganoff.html">Simple Beef Stroganoff</a>
+        <div class="dropdown">
+            <a href="./pop-recipes.html">Popular Recipes</a>
+            <div class="dropdown-content">
+                <a href="./recipes/banana-pudding.html">Banana Pudding</a>
+                <a href="./recipes/blackened-chicken.html">Blackened Chicken</a>
+                <a href="./recipes/beef-stroganoff.html">Simple Beef Stroganoff</a>
+            </div>
+        </div>
+        
+        
         <a href="./all-recipes.html">All Recipes</a>
     </div>
 
     <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;Navigate</button>
-        <h1 id="homeTitle">
-            Odin Recipes
-        </h1>
+        <div class="container">
+            <h1 id="homeTitle">
+                Odin Recipes
+            </h1>
+        </div>
     </div>
    
     
